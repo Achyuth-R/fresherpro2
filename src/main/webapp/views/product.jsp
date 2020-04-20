@@ -118,7 +118,7 @@
     </div>
     </div>
 
-    <div class="col-6 mt-5">
+    <div class="col-4 mt-5">
     <table class="fnt" style="width: 100%;
                      display: flex;
                      justify-content: center;
