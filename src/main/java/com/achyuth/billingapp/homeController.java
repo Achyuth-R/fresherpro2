@@ -49,7 +49,6 @@ public class homeController
     public String addNewProduct(@ModelAttribute("productData") product prod,Model m)
     {
         prod_repo_object.save(prod);
-        //System.out.print(prod);
         List<product> all_products= prod_repo_object.findAll();
 
         m.addAttribute("allProducts",all_products);
