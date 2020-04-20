@@ -61,7 +61,7 @@
     </div>
 <div class="row">
     <div class="col-6">
-        <div class="container ">
+        <div class="">
             <div class="row ">
                 <div class="col-md-6 offset-md-3 mt-5 " style="border-style: solid; border-color: darkgrey;">
                     <legend class="ml-4 mt-2" style="font-variant: small-caps; "> Create product</legend>
@@ -152,7 +152,7 @@
         </c:forEach>
     </table>
 </div>
-<div class = "col-3" style="margin-top: 12%;">
+<div class = "col-3" style="margin-top: 12%; margin-left: 10%;">
     <form action="updateProduct" method="post" id="edit_form"
         style="display: none;float:right;margin-right: 40px;margin-top: -140px">
         Enter the Id of the Product
