@@ -1,7 +1,9 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> -->
 <html>
     <head>
         <title>Products page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     </head>
     <style>
         td, th {
@@ -11,15 +13,41 @@
         }
 
         tr:nth-child(even) {
-            background-color: green;
+            background-color: #343A40;
             color: white;
         }
+        .fnt{
+          font-family: 'Raleway', sans-serif;
+        }
+        .fnt1{
+          font-variant: small-caps;
+        }
     </style>
-    <body>
-        <h2 style="text-align: center;">Welcome to GST Billing app</h2>
-        <h3 style="text-align: center;">Add new product or go to billing page</h3>
-        <h4 style="text-align: center;"><form action="BillProduct" method="post">
-        <input type="submit" value="BILLING-PAGE"/></form> </h4>
+    <body class="bg-dark text-light fnt">
+
+        <div style="background-color: #BB1E5D; font-size: large; font-weight: bold;">
+            <div class="container">
+              <nav class="navbar fnt1 navbar-dark" style="background-color:#BB1E5D; ">
+                <a class="navbar-brand" href="#" style="color: white;"><h3>fresherpro</h3></a>
+                <ul class="nav justify-content-end">
+                  <li class="nav-item">
+    
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" style="color: white; font-size: large; font-weight: 550; margin-top: 1pt;">create</a>
+                  </li>
+                  <li class="nav-item">
+                    <!-- <a class="nav-link " href="/gst.html" style="color: white;"><h5>order</h5></a> -->
+                    <form action="BillProduct" method="post">
+                        <input class = "nav-link mt-2" style="border: none; background-color: #BB1E5D; color: white; font-size: small;" type="submit" value="BILLING-PAGE"/></form>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          
+        <!-- <h4 style="text-align: center;"><form action="BillProduct" method="post"> -->
+        <!-- <input type="submit" value="BILLING-PAGE"/></form> </h4> -->
         <form style="text-align: center;"
                 action="addProduct" method="post">
             Enter your Product Code:
@@ -64,7 +92,7 @@
                     <td><c:out value="${item.product_name}" /></td>
                     <td><c:out value="${item.product_price}" /></td>
                     <td><c:out value="${item.product_gst}" /></td>
-                    <td><input type="submit" value="Modify Product Data" onclick="loadEditOption(${item.product_code})"></td>
+                    <td><input type="submit" class = "btn btn-primary" style = "background-color: #BB1E5D;border: none;" value="Modify Product Data" onclick="loadEditOption(${item.product_code})"></td>
                 </tr>
             </c:forEach>
         </table>
@@ -82,10 +110,13 @@
                 <input type="number" name="product_gst"/>
                 <br>
                 <input type="submit">
-                <button onclick="hideForm()">Hide</button>
+                <button class = "btn btn-primary" style="background-color: #BB1E5D;" onclick="hideForm()">Hide</button>
             </form>
 
     </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script>
         function loadEditOption(product_id)
         {
