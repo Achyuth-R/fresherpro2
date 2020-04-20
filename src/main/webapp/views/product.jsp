@@ -121,8 +121,6 @@
     <div class="col-3 mt-5">
     <table class="fnt" style="width: 100%;
                      display: flex;
-                     justify-content: center;
-                     align-content: center;
                      text-align: center;
                      font-family: 'Times New Roman';">
         <tr class="fnt">
@@ -152,7 +150,7 @@
         </c:forEach>
     </table>
 </div>
-<div class = "col-3" style="margin-top: 12%; margin-left: 5pt;">
+<div class = "col-3" style="margin-top: 12%;">
     <form action="updateProduct" method="post" id="edit_form"
         style="display: none;float:right;margin-right: 40px;margin-top: -140px">
         Enter the Id of the Product
