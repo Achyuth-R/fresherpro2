@@ -45,8 +45,8 @@
                     <li class="nav-item">
 
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#"
-                            style="color: white; font-size: large; font-weight: 550; margin-top: 1pt;">create</a>
+                        <button class="nav-link disabled fnt fnt1" href="#"
+                            style="background-color: #BB1E5D; border: none; color: white; font-size:14pt; font-weight: 580; margin-top: 1pt;">create</button>
                     </li>
                     <li class="nav-item">
                         <!-- <a class="nav-link " href="/gst.html" style="color: white;"><h5>order</h5></a> -->
