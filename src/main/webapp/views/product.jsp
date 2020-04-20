@@ -152,7 +152,7 @@
         </c:forEach>
     </table>
 </div>
-<div class = "col-3" style="margin-top: 12%; margin-left: 10%;">
+<div class = "col-3" style="margin-top: 12%; margin-left: 5pt;">
     <form action="updateProduct" method="post" id="edit_form"
         style="display: none;float:right;margin-right: 40px;margin-top: -140px">
         Enter the Id of the Product
