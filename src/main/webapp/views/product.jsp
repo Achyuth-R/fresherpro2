@@ -10,7 +10,7 @@
 <style>
     td,
     th {
-        border: 1px solid black;
+        border: solid darkgray;
         text-align: left;
         padding: 8px;
     }
@@ -59,66 +59,66 @@
             </nav>
         </div>
     </div>
-
-    <div class="container ">
-        <div class="row ">
-            <div class="col-md-6 offset-md-3 mt-5 " style="border-style: solid; border-color: darkgrey;">
-                <legend class="ml-4 mt-2" style="font-variant: small-caps; "> Create product</legend>
-                <hr style="background-color: darkgrey;">
-                <form class="fnt "  action="addProduct" method="post">
-                        <div>
-                            <label for="product_code" class = "col-sm-4 col-form-label ml-3">Product code :</label>
-                            <div class = "form-group row input-group col-sm-11 bord ml-3">
-                              <input type="number" class="form-control " name="product_code" id="product_code">
-                              <div class="input-group-append">
-                                <span class="input-group-text" id="product_code">eg : ap01</span>
-                              </div>
+<div class="row">
+    <div class="col-6">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 offset-md-3 mt-5 " style="border-style: solid; border-color: darkgrey;">
+                    <legend class="ml-4 mt-2" style="font-variant: small-caps; "> Create product</legend>
+                    <hr style="background-color: darkgrey;">
+                    <form class="fnt "  action="addProduct" method="post">
+                            <div>
+                                <label for="product_code" class = "col-sm-6 col-form-label ml-3">Product code :</label>
+                                <div class = "form-group row input-group col-sm-11 bord ml-3">
+                                <input type="number" class="form-control " name="product_code" id="product_code">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="product_code">eg : ap01</span>
+                                </div>
+                                </div>
                             </div>
-                          </div>
-                          <div>
-                            <label for="product_name" class = "col-sm-4 col-form-label ml-3">Product name :</label>
-                            <div class = "form-group row input-group col-sm-11 bord ml-3">
-                              <input type="text" class="form-control " name="product_name" id="product_name">
-                              <div class="input-group-append">
-                                <span class="input-group-text" id="product_name">eg : toothpaste</span>
-                              </div>
+                            <div>
+                                <label for="product_name" class = "col-sm-6 col-form-label ml-3">Product name :</label>
+                                <div class = "form-group row input-group col-sm-11 bord ml-3">
+                                <input type="text" class="form-control " name="product_name" id="product_name">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="product_name">eg : toothpaste</span>
+                                </div>
+                                </div>
                             </div>
-                          </div>
-                          <div>
-                            <label for="product_price" class = "col-sm-4 col-form-label ml-3">Product price :</label>
-                            <div class = "form-group row input-group col-sm-11 bord ml-3">
-                              <input type="number" class="form-control " name="product_price" id="product_price">
-                              <div class="input-group-append">
-                                <span class="input-group-text" id="product_price">price per product</span>
-                              </div>
+                            <div>
+                                <label for="product_price" class = "col-sm-6 col-form-label ml-3">Product price :</label>
+                                <div class = "form-group row input-group col-sm-11 bord ml-3">
+                                <input type="number" class="form-control " name="product_price" id="product_price">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="product_price">price per product</span>
+                                </div>
+                                </div>
                             </div>
-                          </div>
-                          <div>
-                            <label for="product_gst" class = "col-sm-4 col-form-label ml-3">Product gst :</label>
-                            <div class = "form-group row input-group col-sm-11 bord ml-3">
-                              
-                              <input type="number" class="form-control " name="product_gst" id="product_gst">
-                              <div class="input-group-append">
-                                <span class="input-group-text" id="product_gst">%</span>
-                              </div>
+                            <div>
+                                <label for="product_gst" class = "col-sm-6 col-form-label ml-3">Product gst :</label>
+                                <div class = "form-group row input-group col-sm-11 bord ml-3">
+                                
+                                <input type="number" class="form-control " name="product_gst" id="product_gst">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="product_gst">%</span>
+                                </div>
+                                </div>
                             </div>
-                          </div>
-                          <div>
-                            <div class="form-group row">
-                              <div class="col-sm-7 offset-sm-5">
-                                  <button type="submit" class="btn btn-primary" style="background-color: #BB1E5D ; border: none; color: l;">Create</button>
-                              </div>
-                          </div>
-                        </div>
-                    
-                </form>
-            </div>
+                            <div>
+                                <div class="form-group row">
+                                <div class="col-sm-7 offset-sm-5">
+                                    <button type="submit" class="btn btn-primary" style="background-color: #BB1E5D ; border: none; color: l;">Create</button>
+                                </div>
+                            </div>
+                            </div>
+                        
+                    </form>
+                </div>
         </div>
     </div>
+    </div>
 
-
-    <h2 style="text-align: center">All Product Details</h2>
-
+    <div class="col-6 mt-5">
     <table class="fnt" style="width: 100%;
                      display: flex;
                      justify-content: center;
@@ -168,7 +168,8 @@
         <input type="submit">
         <button class="btn btn-primary" style="background-color: #BB1E5D;" onclick="hideForm()">Hide</button>
     </form>
-
+</div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
