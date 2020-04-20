@@ -118,7 +118,7 @@
     </div>
     </div>
 
-    <div class="col-4 mt-5">
+    <div class="col-3 mt-5">
     <table class="fnt" style="width: 100%;
                      display: flex;
                      justify-content: center;
@@ -151,6 +151,8 @@
             </tr>
         </c:forEach>
     </table>
+</div>
+<div class = "col-3">
     <form action="updateProduct" method="post" id="edit_form"
         style="display: none;float:right;margin-right: 40px;margin-top: -140px">
         Enter the Id of the Product
