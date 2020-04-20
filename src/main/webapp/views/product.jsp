@@ -164,7 +164,7 @@
                 <br>
                 <input type="number" name="product_gst" />
                 <br>
-                <input type="submit" style="background-color: #BB1E5D; color: white;">
+                <input class="btn btn-primary" type="submit" style="background-color: #BB1E5D; color: white;">
                 <button class="btn btn-primary" style="background-color: #BB1E5D;" onclick="hideForm()">Hide</button>
             </form>
         </div>
