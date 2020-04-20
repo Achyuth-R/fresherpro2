@@ -149,7 +149,7 @@
                 </c:forEach>
             </table>
         </div>
-        <div class="col-3" style="margin-top: inherit;">
+        <div class="col-3" style="margin-top: 12%;">
             <form action="updateProduct" method="post" id="edit_form"
                 style="display: none;float:right;">
                 Id:
